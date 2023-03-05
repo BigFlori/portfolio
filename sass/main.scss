@@ -1,31 +1,52 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 @import "overrides";
 @import "variables";
+@import "theme";
+@import "pages/home";
+@import "pages/projects";
+
+/* Globals */
+* {
+  box-sizing: content-box;
+  margin: 0;
+}
 
 body {
   font-family: "Rubik", sans-serif;
+  // font-family: 'Source Sans Pro', sans-serif;
 }
 
-.bg-image {
-  background-image: url("../assets/img/home-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  width: 100vw;
+/* Navbar */
+i.bi.bi-moon, i.bi.bi-zoom-in {
+  font-size: 20px;
 }
 
-.overlay {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
+@media (min-width: #{$screen-md}) {
+  .d-none-md {
+    display: none;
+  }
 }
 
-.bg-dark-2 {
-    background-color: $dark-translucent-2;
+.navbar {
+  z-index: 1000;
 }
 
-.bg-dark-3 {
-    background-color: $dark-translucent-3;
+/* Footer */
+.footer-text {
+  font-size: 0.9rem;
+
+  &.enlarged {
+    font-size: 1.1rem;
+  }
+
+  i.bi.bi-heart-fill {
+    color: #dc3545;
+  }
+}
+
+.spacer-line {
+  height: 1px;
+  // background-color: #000000;
+  margin: 0.5rem 0;
 }

@@ -1,0 +1,33 @@
+@import "variables";
+
+.bg-dark-1 {
+  background-color: $dark-translucent-1;
+}
+
+.bg-dark-2 {
+  background-color: $dark-translucent-2;
+}
+
+.bg-dark-3 {
+  background-color: $dark-translucent-3;
+}
+
+.bg-light-1 {
+  background-color: $light-translucent-1;
+}
+
+.bg-light-2 {
+  background-color: $light-translucent-2;
+}
+
+.bg-light-3 {
+  background-color: $light-translucent-3;
+}
+
+.spacer-dark {
+  background-color: $black;
+}
+
+.spacer-light {
+  background-color: $light;
+}

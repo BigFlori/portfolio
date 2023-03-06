@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -50,8 +50,8 @@
           <ul class="navbar-nav ml-3 gap-2">
             <li class="nav-item">
               <a class="nav-link" href="#" id="theme-toggle">
-                <i class="bi bi-moon"></i>
-                <span class="d-none-md">Dark mode</span>
+                <i class="bi bi-moon" id="theme-icon"></i>
+                <span class="d-none-md" id="theme-text">Dark mode</span>
               </a>
             </li>
             <li class="nav-item">
@@ -66,73 +66,116 @@
     </nav>
     <!-- End of Navigation -->
     <!--Main content-->
-    <header class="d-flex align-items-center flex-column gap-4 mt-5 text-light">
+    <header class="container-sm gx-0 text-center d-flex align-items-center flex-column gap-3 mt-5 text-light">
       <h1 class="fw-bold fs-1">My projects</h1>
-      <h2 class="fw-light fs-4">Get an overview on some of my projects</h2>
+      <h2 class="fw-light fs-4 mx-lg-0 mx-1">Get an overview on some of my projects</h2>
       <span class="spacer-line spacer-light" style="width: 150px"></span>
     </header>
-    <main>
+    <main class="mt-5">
       <section class="container-sm gx-0">
-        <div class="row">
-          <div class="d-flex justify-content-center col-md">
-            <div class="card" style="width: 18rem">
+        <div class="row gap-4 gx-0">
+          <div class="d-flex justify-content-center col-lg">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
               <img
                 src="assets/img/todo-preview.png"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div
+                class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title">Todo application</h5>
+                  <p class="card-text">
+                    A simple todo application written in React with TypeScript
+                    using Material UI.
+                  </p>
+                </div>
+                <a href="https://react-todo-rho-six.vercel.app/" target="_blank" class="btn btn-primary btn-card-action">Try out</a>
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center col-md">
-            <div class="card" style="width: 18rem">
+          <div class="d-flex justify-content-center col-lg">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
               <img
                 src="assets/img/weather-preview.png"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div
+                class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title">Weather application</h5>
+                  <p class="card-text">
+                    Check the current weather anywhere in the world by city
+                    name! Written in React.
+                  </p>
+                </div>
+                <a href="https://weather-demo-app.vercel.app/" target="_blank" class="btn btn-primary btn-card-action">Try out</a>
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center col-md">
-            <div class="card" style="width: 18rem">
+          <div class="d-flex justify-content-center col-lg">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
               <img
                 src="assets/img/shareit-preview.png"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div
+                class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title">Shareit</h5>
+                  <p class="card-text">
+                    Shareit is a social media platform for sharing your
+                    thoughts. Currently under development, made in Next.js with
+                    TypeScript using Material UI.
+                  </p>
+                </div>
+                <a href="https://github.com/BigFlori/next-social-media" target="_blank" class="btn btn-primary btn-card-action"
+                  >Check codebase</a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section></section>
+      <section class="container-sm gx-0 mt-6 mb-5">
+        <h6 class="mb-3 text-light mx-lg-0 mx-2 text-center">Overview of projects as a data table</h6>
+        <table class="table">
+          <thead>
+            <tr class="text-light">
+              <th scope="col">Done</th>
+              <th scope="col">Project name</th>
+              <th scope="col">Technologies and libraries</th>
+            </tr>
+          </thead>
+          <tbody class="text-light">
+            <tr>
+              <th scope="row">Yes</th>
+              <td>Todo application</td>
+              <td>React, TypeScript, Material UI</td>
+            </tr>
+            <tr>
+              <th scope="row">Yes</th>
+              <td>Weather application</td>
+              <td>React, CSS modules, Bootstrap</td>
+            </tr>
+            <tr>
+              <th scope="row">No</th>
+              <td>Shareit</td>
+              <td>Next.js, TypeScript, Material UI</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <!--End of Main content-->
     <!--Footer-->
     <footer
-      class="d-flex flex-column justify-content-center align-items-center fixed-bottom text-light"
+      class="d-flex flex-column justify-content-center align-items-center text-light mt-3"
     >
       <p class="footer-text">
         &copy; 2023, made with <i class="bi bi-heart-fill"></i> by Molnár

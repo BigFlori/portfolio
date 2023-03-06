@@ -7,11 +7,13 @@ $purple: #911ec5;
 /* bg colors */
 $black: rgb(0, 0, 0);
 $dark: rgb(25, 25, 25);
+$dark-card: lighten($dark, 5%);
 $dark-translucent-1: rgba(0, 0, 0, 0.9);
 $dark-translucent-2: rgba(0, 0, 0, 0.75);
 $dark-translucent-3: rgba(0, 0, 0, 0.6);
 
 $light: rgb(255, 255, 255);
+$light-card: darken($light, 3%);
 $light-translucent-1: rgba(228, 228, 228, 0.9);
 $light-translucent-2: rgba(255, 255, 255, 0.75);
 $light-translucent-3: rgba(255, 255, 255, 0.6);

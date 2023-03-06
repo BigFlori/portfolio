@@ -1,12 +1,26 @@
 const body = document.body;
 const themeToggleBtn = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+const themeText = document.getElementById("theme-text");
 const navbar = document.getElementById("navbar");
 
 const darkTextClasses = ["text-dark", "spacer-dark"];
 const lightTextClasses = ["text-light", "spacer-light"];
 
-const darkBgClasses = ["bg-dark", "bg-dark-1", "bg-dark-2", "bg-dark-3"];
-const lightBgClasses = ["bg-light", "bg-light-1", "bg-light-2", "bg-light-3"];
+const darkBgClasses = [
+  "bg-dark",
+  "bg-dark-1",
+  "bg-dark-2",
+  "bg-dark-3",
+  "bg-dark-card",
+];
+const lightBgClasses = [
+  "bg-light",
+  "bg-light-1",
+  "bg-light-2",
+  "bg-light-3",
+  "bg-light-card",
+];
 
 const formatForQuery = (classes) => {
   return classes.map((className) => `.${className}`).join(", ");
@@ -66,18 +80,36 @@ const changeBackgroundColors = (theme) => {
   }
 };
 
+const changeThemeToggler = (theme) => {
+  if (theme === "dark") {
+    themeIcon.classList.remove("bi-moon");
+    themeIcon.classList.add("bi-lightbulb-fill");
+    themeText.textContent = "Light mode";
+  } else {
+    themeIcon.classList.remove("bi-lightbulb-fill");
+    themeIcon.classList.add("bi-moon");
+    themeText.textContent = "Dark mode";
+  }
+};
+
+const changeColorScheme = (theme) => {
+  document.documentElement.style.display = "none";
+  document.documentElement.setAttribute("data-color-scheme", theme);
+  document.body.clientWidth;
+  document.documentElement.style.display = "";
+};
+
 const setTheme = (theme) => {
   if (theme === "dark") {
-    localStorage.setItem("theme", "dark");
     body.classList.add("dark");
-    changeTextColors(theme);
-    changeBackgroundColors(theme);
   } else {
-    localStorage.setItem("theme", "light");
     body.classList.remove("dark");
-    changeTextColors(theme);
-    changeBackgroundColors(theme);
   }
+  localStorage.setItem("theme", theme);
+  changeTextColors(theme);
+  changeBackgroundColors(theme);
+  changeThemeToggler(theme);
+  changeColorScheme(theme);
 };
 
 const toggleTheme = () => {

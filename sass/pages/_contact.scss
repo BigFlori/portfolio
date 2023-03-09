@@ -1,47 +1,80 @@
-#content-contact {
-    // display: flex;
-    // justify-content: center;
-    // gap: 8rem;
-}
-
 .input--group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
-.input--group input, .input--group textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    background: transparent;
+.input--group input,
+.input--group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background: transparent;
+}
+
+.gap-6 {
+  gap: 4.5rem;
 }
 
 .form-container {
-    width: 70%;
-    margin-left: 10rem;
-    margin-bottom: 3rem;
+  width: 70%;
+  margin-left: 10rem;
+
+  @media (max-width: $screen-xl) {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  @media (max-width: $screen-lg) {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+.social-container {
+  @media (max-width: $screen-md) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .btn-github {
-    background-color: $black;
-    color: #fff;
-    font-size: 0.9rem;
+  background-color: $black;
+  color: #fff;
+  font-size: 0.9rem;
 
-    &:hover {
-        background-color: lighten($black, 10%);
-        color: #fff;
-    }
+  &:hover {
+    background-color: lighten($black, 5%);
+    color: #fff;
+  }
 }
 
 .btn-linkedin {
-    font-size: 0.9rem;
+  background-color: $linkedin;
+  font-size: 0.9rem;
+  color: #fff;
+
+  &:hover {
+    background-color: lighten($linkedin, 5%);
+    color: #fff;
+  }
 }
 
 .alternate-link:visited {
-    color: $purple !important;
+  color: $purple !important;
 }

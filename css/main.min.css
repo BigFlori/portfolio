@@ -5,7 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10984,23 +10984,63 @@ textarea.form-control-lg {
   height: auto;
 }
 
+.desc-link:visited {
+  color: #911ec5 !important;
+}
+
 .input--group {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
 }
 
-.input--group input, .input--group textarea {
+.input--group input,
+.input--group textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   background: transparent;
 }
 
+.gap-6 {
+  gap: 4.5rem;
+}
+
 .form-container {
   width: 70%;
   margin-left: 10rem;
-  margin-bottom: 3rem;
+}
+@media (max-width: 1200px) {
+  .form-container {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 992px) {
+  .form-container {
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 576px) {
+  .form-container {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 textarea {
@@ -11013,12 +11053,18 @@ textarea {
   font-size: 0.9rem;
 }
 .btn-github:hover {
-  background-color: #1a1a1a;
+  background-color: #0d0d0d;
   color: #fff;
 }
 
 .btn-linkedin {
+  background-color: rgb(10, 102, 194);
   font-size: 0.9rem;
+  color: #fff;
+}
+.btn-linkedin:hover {
+  background-color: #0b73da;
+  color: #fff;
 }
 
 .alternate-link:visited {
@@ -11041,6 +11087,7 @@ textarea {
 
 body {
   font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
 }
 
 .spacer-line {
@@ -11052,7 +11099,7 @@ body {
 i.bi.bi-moon,
 i.bi.bi-zoom-in,
 i.bi.bi-lightbulb-fill {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -11078,4 +11125,11 @@ i.bi.bi-lightbulb-fill {
 }
 .footer-text i.bi.bi-heart-fill {
   color: #dc3545;
+}
+
+@media (max-width: 576px) {
+  main {
+    width: 95%;
+    margin-inline: auto;
+  }
 }/*# sourceMappingURL=main.min.css.map */

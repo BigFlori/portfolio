@@ -4,8 +4,8 @@ const themeIcon = document.getElementById("theme-icon");
 const themeText = document.getElementById("theme-text");
 const navbar = document.getElementById("navbar");
 
-const darkTextClasses = ["text-dark", "spacer-dark"];
-const lightTextClasses = ["text-light", "spacer-light"];
+const darkTextClasses = ["text-dark", "spacer-dark", "btn-dark"];
+const lightTextClasses = ["text-light", "spacer-light", "btn-light"];
 
 const darkBgClasses = [
   "bg-dark",

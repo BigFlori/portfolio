@@ -1,14 +1,14 @@
 .center-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .img-portrait {
-    width: 65%;
-    max-width: 300px;
-    height: auto;
+  width: 65%;
+  max-width: 300px;
+  height: auto;
 }
 
-.video-description {
-    
+.desc-link:visited {
+  color: $purple !important;
 }

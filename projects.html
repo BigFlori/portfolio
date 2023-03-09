@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark-1" id="navbar">
       <div class="container-xl">
-        <a class="navbar-brand" href="#">Molnár Flórián</a>
+        <a class="navbar-brand" href="index.html">Molnár Flórián</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -143,33 +143,36 @@
         </div>
       </section>
       <section class="container-sm gx-0 mt-6 mb-5">
-        <h6 class="mb-3 text-light mx-lg-0 mx-2 text-center">Overview of projects as a data table</h6>
-        <table class="table">
-          <thead>
-            <tr class="text-light">
-              <th scope="col">Done</th>
-              <th scope="col">Project name</th>
-              <th scope="col">Technologies and libraries</th>
-            </tr>
-          </thead>
-          <tbody class="text-light">
-            <tr>
-              <th scope="row">Yes</th>
-              <td>Todo application</td>
-              <td>React, TypeScript, Material UI</td>
-            </tr>
-            <tr>
-              <th scope="row">Yes</th>
-              <td>Weather application</td>
-              <td>React, CSS modules, Bootstrap</td>
-            </tr>
-            <tr>
-              <th scope="row">No</th>
-              <td>Shareit</td>
-              <td>Next.js, TypeScript, Material UI</td>
-            </tr>
-          </tbody>
-        </table>
+        <details>
+          <summary>Overview of projects as a data table</summary>
+          <table class="table" summary="Overview of projects as a data table">
+            <caption>Projects</caption>
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Project name</th>
+                <th>Technologies and libraries</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yes</td>
+                <td>Todo application</td>
+                <td>React, TypeScript, Material UI</td>
+              </tr>
+              <tr>
+                <td>Yes</td>
+                <td>Weather application</td>
+                <td>React, CSS modules, Bootstrap</td>
+              </tr>
+              <tr>
+                <td>No</td>
+                <td>Shareit</td>
+                <td>Next.js, TypeScript, Material UI</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
       </section>
     </main>
     <!--End of Main content-->

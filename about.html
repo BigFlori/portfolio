@@ -1,18 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projects</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
+  <body class="bg-dark">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark-1" id="navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">Molnár Flórián</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end gap-5"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-3 gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="theme-toggle">
+                <i class="bi bi-moon" id="theme-icon"></i>
+                <span class="d-none-md" id="theme-text">Dark mode</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-zoom-in"></i>
+                <span class="d-none-md">Zoom in</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+    <!--Main content-->
+    <header
+      class="container-sm gx-0 text-center d-flex align-items-center flex-column gap-3 mt-5 text-light"
+    >
+      <h1 class="fw-bold fs-1">About me</h1>
+      <span class="spacer-line spacer-light" style="width: 120px"></span>
+    </header>
+    <main class="mt-5">
+      <section class="container-sm gx-0 ml-5">
+        <div class="row gx-0 gap-5">
+          <div class="col-md text-light">
+            <h3 class="fw-bold">Hey there!</h3>
+            <p>
+              My name is Molnár Flórián and I'm a 21 years old Computer Science
+              student at Eötvös Lóránd Tudományegyetem.
+            </p>
+            <p>
+              My daily goal is to learn new things everyday related to web
+              development and become better and better, day by day.
+            </p>
+            <p>
+              I was an athlete as a ski jumper for 15 years, because of this I
+              had the opportunity to visit several countries and get to know
+              other cultures and awesome people.
+            </p>
+            <p>
+              My goal after graduation is to become a full time web developer.
+            </p>
+          </div>
+          <div class="col-md center-img">
+            <a href="assets/img/me-portre.jpg" class="img-portrait">
+              <img
+                src="assets/img/me-portre.jpg"
+                title="A portrait of me"
+                alt="A portrait of me"
+                class="elevation-8 rounded-2"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="container-sm gx-0 mt-5">
+        <h2 class="text-light fs-3 text-center">Check out some of my jumps</h2>
+        <div class="row gx-0 gap-4 justify-content-center">
+          <div class="col-lg col-md-4">
+            <video controls style="width: 100%;" class="elevation-8 rounded-2">
+              <source
+                src="assets/video/planica_training.mp4"
+                type="video/mp4"
+              />
+              <source src="my-video.webm" type="video/webm" />
+              <track
+                kind="descriptions"
+                src="my-video-description.html"
+                srclang="en"
+                label="English"
+              />
+            </video>
+            <span class="text-light fw-light">Planica training 2020</span>
+          </div>
+          <div class="col-lg col-md-4">
+            <video controls style="width: 100%;" class="elevation-8 rounded-2">
+              <source src="assets/video/lausanne_yog.mp4" type="video/mp4" />
+              <source src="my-video.webm" type="video/webm" />
+              <track
+                kind="descriptions"
+                src="my-video-description.html"
+                srclang="en"
+                label="English"
+              />
+            </video>
+            <span class="text-light fw-light">Winter Youth Olympic Games Lausanne 2020</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--End of Main content-->
+    <!--Footer-->
+    <footer
+      class="d-flex flex-column justify-content-center align-items-center text-light mt-3"
+    >
+      <p class="footer-text">
+        &copy; 2023, made with <i class="bi bi-heart-fill"></i> by Molnár
+        Flórián
+      </p>
+    </footer>
+    <!--End of Footer-->
+    <!--Js-->
+    <script src="js/theming.js"></script>
+    <!--Bootstrap js-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

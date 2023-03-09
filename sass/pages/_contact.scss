@@ -1,0 +1,47 @@
+#content-contact {
+    // display: flex;
+    // justify-content: center;
+    // gap: 8rem;
+}
+
+.input--group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.input--group input, .input--group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background: transparent;
+}
+
+.form-container {
+    width: 70%;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-github {
+    background-color: $black;
+    color: #fff;
+    font-size: 0.9rem;
+
+    &:hover {
+        background-color: lighten($black, 10%);
+        color: #fff;
+    }
+}
+
+.btn-linkedin {
+    font-size: 0.9rem;
+}
+
+.alternate-link:visited {
+    color: $purple !important;
+}

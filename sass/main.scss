@@ -5,6 +5,8 @@
 @import "theme";
 @import "pages/home";
 @import "pages/projects";
+@import "pages/about";
+@import "pages/contact";
 
 /* Globals */
 * {
@@ -40,6 +42,12 @@ i.bi.bi-lightbulb-fill {
 
 @media (min-width: #{$screen-md}) {
   .d-none-md {
+    display: none;
+  }
+}
+
+@media (max-width: #{$screen-md}) {
+  .d-none-until-md {
     display: none;
   }
 }

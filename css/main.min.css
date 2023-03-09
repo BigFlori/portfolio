@@ -10973,6 +10973,58 @@ textarea.form-control-lg {
   margin-top: 6rem;
 }
 
+.center-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-portrait {
+  width: 65%;
+  max-width: 300px;
+  height: auto;
+}
+
+.input--group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.input--group input, .input--group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background: transparent;
+}
+
+.form-container {
+  width: 70%;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-github {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 0.9rem;
+}
+.btn-github:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.btn-linkedin {
+  font-size: 0.9rem;
+}
+
+.alternate-link:visited {
+  color: #911ec5 !important;
+}
+
 /* Globals */
 * {
   box-sizing: content-box;
@@ -11005,6 +11057,11 @@ i.bi.bi-lightbulb-fill {
 
 @media (min-width: 768px) {
   .d-none-md {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .d-none-until-md {
     display: none;
   }
 }

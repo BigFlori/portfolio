@@ -14,9 +14,17 @@
     max-width: 50%;
   }
 
+.gallery-img {
+  max-width: 60%;
+}
+
+  .col-12 {
+    max-width: 50%;
+  }
+
   .img-fluid {
     max-width: 50%;
-    
+
     @media (max-width: #{$screen-lg}) {
       max-width: 40%;
     }

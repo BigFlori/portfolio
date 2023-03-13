@@ -8,6 +8,7 @@
 @import "pages/projects";
 @import "pages/about";
 @import "pages/contact";
+@import "pages/gallery";
 
 /* Globals */
 * {
@@ -36,7 +37,8 @@ body {
 /* Navbar */
 i.bi.bi-moon,
 i.bi.bi-zoom-in,
-i.bi.bi-lightbulb-fill {
+i.bi.bi-lightbulb-fill,
+i.bi.bi-zoom-out {
   font-size: 1.25rem;
 }
 
@@ -93,4 +95,8 @@ i.bi.bi-lightbulb-fill {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.big-text {
+  font-size: 300% !important;
 }

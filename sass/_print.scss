@@ -1,0 +1,103 @@
+@media print {
+  video,
+  .navbar,
+  .spacer-line,
+  footer.d-flex {
+    display: none !important;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .portrait {
+    max-width: 50%;
+  }
+
+  .img-fluid {
+    max-width: 50%;
+    
+    @media (max-width: #{$screen-lg}) {
+      max-width: 40%;
+    }
+  }
+
+  .card {
+    max-width: 80%;
+    max-height: 100%;
+
+    @media (max-width: #{$screen-lg}) {
+      max-width: 50%;
+    }
+  }
+
+  body {
+    font-size: 80%;
+  }
+
+  .btn-card-action {
+    max-width: 50%;
+    font-size: 80%;
+  }
+
+  .btn.btn-about {
+    max-width: 100%;
+    font-size: 80%;
+    max-height: 50%;
+    padding-inline: 20px !important;
+    border-radius: 20px !important;
+    border: 1px solid $purple !important;
+  }
+
+  .btn {
+    max-width: 60%;
+    font-size: 80%;
+    align-self: center;
+  }
+
+  svg {
+    max-width: 20% !important;
+  }
+
+  .elevation-8 {
+    box-shadow: none !important;
+  }
+
+  .mb-1,
+  .mb-2,
+  .mb-3,
+  .mb-4,
+  .mb-5,
+  .mb-6 {
+    margin-bottom: 1rem !important;
+  }
+
+  .mt-1,
+  .mt-2,
+  .mt-3,
+  .mt-4,
+  .mt-5,
+  .mt-6 {
+    margin-top: 1rem !important;
+  }
+
+  .gap-1,
+  .gap-2,
+  .gap-3,
+  .gap-4,
+  .gap-5 {
+    gap: 1rem !important;
+  }
+
+  .fs-1,
+  .fs-2,
+  .fs-3,
+  .fs-4,
+  .fs-5 {
+    font-size: 100% !important;
+  }
+
+  .fs-6 {
+    font-size: 80% !important;
+  }
+}

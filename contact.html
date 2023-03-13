@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact · Molnár Flórián</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body class="bg-dark">
+    <a href="#content" class="jump-to-content">Tartalomra ugrás</a>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark-1" id="navbar">
       <div class="container-xl">
@@ -46,6 +47,9 @@
                 >Contact</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-3 gap-2">
             <li class="nav-item">
@@ -72,11 +76,11 @@
       <h1 class="fw-bold fs-1">Get in touch</h1>
       <span class="spacer-line spacer-light" style="width: 120px"></span>
     </header>
-    <main class="container-sm gx-0 mt-5">
+    <main class="container-sm gx-0 mt-5" id="content">
       <div class="row gx-0 gap-6">
         <section class="col text-light">
           <div class="form-container">
-            <h2 class="text-center mb-3">Send me an e-mail</h2>
+            <h2 class="mb-3 fs-2">Send me an e-mail</h2>
             <form autocomplete="off">
               <div class="input--group mb-3">
                 <label for="name">Name * </label>
@@ -124,7 +128,7 @@
                 ></textarea>
               </div>
               <div class="input--group mb-5">
-                <label for="genderGroup">Gender</label>
+                <span>Gender</span>
                 <div role="group" id="genderGroup" class="d-flex gap-3">
                   <div>
                     <input
@@ -159,21 +163,19 @@
               <div class="mb-3">
                 <input type="checkbox" name="acceptPolicy" id="acceptPolicy" required />
                 <label for="acceptPolicy"
-                  >I accept the <a href="#">privacy policy</a>. *</label
+                  >I accept the privacy policy. *</label
                 >
               </div>
               <div class="d-flex gap-3">
                 <button
                   type="reset"
-                  class="btn btn-outline-danger"
-                  style="width: 100%"
+                  class="btn btn-outline-danger w-100"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  class="btn btn-primary"
-                  style="width: 100%"
+                  class="btn btn-primary w-100"
                   id="submitBtn"
                 >
                   <svg
@@ -195,8 +197,8 @@
           </div>
         </section>
         <section class="col text-light social-container">
-          <div class="d-flex flex-column gap-2" style="width: 250px">
-            <h2 class="text-center">Socials</h2>
+          <div class="d-flex flex-column gap-2 socials-container">
+            <h2 class="fs-2">Socials</h2>
             <a
               href="https://github.com/BigFlori"
               target="_blank"
@@ -228,7 +230,7 @@
     <!-- End of main content -->
     <!--Footer-->
     <footer
-      class="d-flex flex-column justify-content-center align-items-center text-light mt-3"
+      class="d-flex flex-column justify-content-center align-items-center text-light mt-5"
     >
       <p class="footer-text">
         &copy; 2023, made with <i class="bi bi-heart-fill"></i> by Molnár

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Projects · Molnár Flórián</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body class="bg-dark">
+    <a href="#content" class="jump-to-content">Tartalomra ugrás</a>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark-1" id="navbar">
       <div class="container-xl">
@@ -46,6 +47,9 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-3 gap-2">
             <li class="nav-item">
@@ -66,75 +70,92 @@
     </nav>
     <!-- End of Navigation -->
     <!--Main content-->
-    <header class="container-sm gx-0 text-center d-flex align-items-center flex-column gap-3 mt-5 text-light">
+    <header
+      class="container-sm gx-0 text-center d-flex align-items-center flex-column gap-3 mt-5 text-light"
+    >
       <h1 class="fw-bold fs-1">My projects</h1>
-      <h2 class="fw-light fs-4 mx-lg-0 mx-1">Get an overview on some of my projects</h2>
+      <h2 class="fw-light fs-4 mx-lg-0 mx-1">
+        Get an overview on some of my projects
+      </h2>
       <span class="spacer-line spacer-light" style="width: 150px"></span>
     </header>
-    <main class="mt-5">
+    <main class="mt-5" id="content">
       <section class="container-sm gx-0">
         <div class="row gap-4 gx-0">
           <div class="d-flex justify-content-center col-lg">
-            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5 w-auto">
               <img
                 src="assets/img/todo-preview.png"
                 class="card-img-top"
-                alt="..."
+                alt="This image shows a preview of my todo application."
               />
               <div
                 class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
               >
                 <div>
-                  <h5 class="card-title">Todo application</h5>
+                  <h3 class="card-title fs-5">Todo application</h3>
                   <p class="card-text">
                     A simple todo application written in React with TypeScript
                     using Material UI.
                   </p>
                 </div>
-                <a href="https://react-todo-rho-six.vercel.app/" target="_blank" class="btn btn-primary btn-card-action">Try out</a>
+                <a
+                  href="https://react-todo-rho-six.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary btn-card-action"
+                  >Try out</a
+                >
               </div>
             </div>
           </div>
           <div class="d-flex justify-content-center col-lg">
-            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5 w-auto">
               <img
                 src="assets/img/weather-preview.png"
                 class="card-img-top"
-                alt="..."
+                alt="This image shows a preview of my weather application."
               />
               <div
                 class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
               >
                 <div>
-                  <h5 class="card-title">Weather application</h5>
+                  <h3 class="card-title fs-5">Weather application</h3>
                   <p class="card-text">
                     Check the current weather anywhere in the world by city
                     name! Written in React.
                   </p>
                 </div>
-                <a href="https://weather-demo-app.vercel.app/" target="_blank" class="btn btn-primary btn-card-action">Try out</a>
+                <a
+                  href="https://weather-demo-app.vercel.app/"
+                  target="_blank"
+                  class="btn btn-primary btn-card-action"
+                  >Try out</a
+                >
               </div>
             </div>
           </div>
           <div class="d-flex justify-content-center col-lg">
-            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5" style="width: auto">
+            <div class="card elevation-8 bg-light-card mx-lg-0 mx-5 w-auto">
               <img
                 src="assets/img/shareit-preview.png"
                 class="card-img-top"
-                alt="..."
+                alt="This image shows a preview of my social media platform."
               />
               <div
                 class="card-body text-dark d-flex flex-column gap-3 justify-content-between"
               >
                 <div>
-                  <h5 class="card-title">Shareit</h5>
+                  <h3 class="card-title fs-5">Shareit</h3>
                   <p class="card-text">
                     Shareit is a social media platform for sharing your
                     thoughts. Currently under development, made in Next.js with
                     TypeScript using Material UI.
                   </p>
                 </div>
-                <a href="https://github.com/BigFlori/next-social-media" target="_blank" class="btn btn-primary btn-card-action"
+                <a
+                  href="https://github.com/BigFlori/next-social-media"
+                  target="_blank"
+                  class="btn btn-primary btn-card-action"
                   >Check codebase</a
                 >
               </div>
@@ -144,17 +165,21 @@
       </section>
       <section class="container-sm gx-0 mt-6 mb-5">
         <details>
-          <summary>Overview of projects as a data table</summary>
-          <table class="table" summary="Overview of projects as a data table">
-            <caption>Projects</caption>
-            <thead>
+          <summary class="text-light">
+            Overview of projects as a data table
+          </summary>
+          <table class="table">
+            <caption class="text-light">
+              Projects
+            </caption>
+            <thead class="text-light">
               <tr>
                 <th>Done</th>
                 <th>Project name</th>
                 <th>Technologies and libraries</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="text-light">
               <tr>
                 <td>Yes</td>
                 <td>Todo application</td>

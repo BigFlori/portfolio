@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>About me · Molnár Flórián</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body class="bg-dark">
+    <a href="#content" class="jump-to-content">Tartalomra ugrás</a>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark-1" id="navbar">
       <div class="container-xl">
@@ -46,6 +47,9 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-3 gap-2">
             <li class="nav-item">
@@ -72,11 +76,11 @@
       <h1 class="fw-bold fs-1">About me</h1>
       <span class="spacer-line spacer-light" style="width: 120px"></span>
     </header>
-    <main class="mt-5 gx-0">
+    <main class="mt-5 gx-0" id="content">
       <section class="container-sm gx-0 ml-5">
         <div class="row gx-0 gap-5">
-          <div class="col-md text-light">
-            <h3 class="fw-bold">Hey there!</h3>
+          <article class="col-md text-light">
+            <h2 class="fw-bold fs-3">Hey there!</h2>
             <p>
               My name is Molnár Flórián and I'm a 21 years old Computer Science
               student at Eötvös Lóránd Tudományegyetem.
@@ -93,50 +97,65 @@
             <p>
               My goal after graduation is to become a full time web developer.
             </p>
-          </div>
+          </article>
           <div class="col-md center-img">
             <a href="assets/img/me-portre.jpg" class="img-portrait">
               <img
                 src="assets/img/me-portre.jpg"
                 title="A portrait of me"
                 alt="A portrait of me"
-                class="elevation-8 rounded-2"
-                style="width: 100%"
+                class="elevation-8 rounded-2 w-100 portrait"
               />
             </a>
           </div>
         </div>
       </section>
-      <section class="container-sm gx-0 mt-5">
+      <aside class="container-sm gx-0 mt-5">
         <h2 class="text-light fs-3 text-center mb-3">
           Check out some of my jumps
         </h2>
         <div class="row gx-0 gap-4 justify-content-center">
-          <div class="col-lg col-md-4">
-            <video controls style="width: 100%" class="elevation-8 rounded-2">
+          <figure class="col-lg col-md-4">
+            <video
+              controls
+              poster="assets/img/planica-poster.png"
+              class="elevation-8 rounded-2 w-100"
+            >
               <source
                 src="assets/video/planica_training.webm"
                 type="video/webm"
               />
             </video>
-            <span class="text-light fw-light">Planica training 2020.</span>
-            <a href="descriptions/planica.html" class="desc-link" target="_blank"
-              >Detailed description</a
+            <figcaption class="text-light fw-light">
+              Planica training 2020.
+              <a
+                href="descriptions/planica.html"
+                class="desc-link"
+                target="_blank"
+                >Detailed description</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="col-lg col-md-4">
+            <video
+              controls
+              poster="assets/img/lausanne-poster.png"
+              class="elevation-8 rounded-2 w-100"
             >
-          </div>
-          <div class="col-lg col-md-4">
-            <video controls style="width: 100%" class="elevation-8 rounded-2">
               <source src="assets/video/lausanne_yog.webm" type="video/webm" />
             </video>
-            <span class="text-light fw-light"
-              >Winter Youth Olympic Games Lausanne 2020.</span
-            >
-            <a href="descriptions/lausanne.xhtml" class="desc-link" target="_blank"
-              >Detailed description</a
-            >
-          </div>
+            <figcaption class="text-light fw-light">
+              Winter Youth Olympic Games Lausanne 2020.
+              <a
+                href="descriptions/lausanne.xhtml"
+                class="desc-link"
+                target="_blank"
+                >Detailed description</a
+              >
+            </figcaption>
+          </figure>
         </div>
-      </section>
+      </aside>
     </main>
     <!--End of Main content-->
     <!--Footer-->

@@ -1,8 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "overrides";
 @import "variables";
 @import "theme";
+@import "print";
 @import "pages/home";
 @import "pages/projects";
 @import "pages/about";
@@ -10,7 +11,7 @@
 
 /* Globals */
 * {
-  box-sizing: content-box;
+  // box-sizing: content-box;
   margin: 0;
 }
 
@@ -73,4 +74,23 @@ i.bi.bi-lightbulb-fill {
     width: 95%;
     margin-inline: auto;
   }
+}
+
+.hover-grow {
+  transition: 0.125s ease-in-out;
+
+  @media (min-width: #{$screen-md}) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.jump-to-content {
+  position: absolute;
+  top: auto;
+  left: -100%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
